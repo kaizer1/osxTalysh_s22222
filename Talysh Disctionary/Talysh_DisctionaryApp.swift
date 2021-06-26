@@ -11,7 +11,7 @@ import SwiftUI
 struct Talysh_DisctionaryApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(losObject())
         }
     }
 }

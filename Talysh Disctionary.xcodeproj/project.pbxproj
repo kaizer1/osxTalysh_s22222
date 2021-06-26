@@ -3,16 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98096D2E267FD94D0041BB64 /* StringLocalize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98096D2D267FD94D0041BB64 /* StringLocalize.swift */; };
+		98096D30267FD96A0041BB64 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98096D2F267FD96A0041BB64 /* Language.swift */; };
+		98096D32267FD9DA0041BB64 /* LocalizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98096D31267FD9DA0041BB64 /* LocalizationService.swift */; };
+		98684D9B267751D8008807AC /* ScrollElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98684D9A267751D8008807AC /* ScrollElement.swift */; };
+		98684DA326779BF5008807AC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98684DA526779BF5008807AC /* Localizable.strings */; };
+		9882552926234ACE00126B2B /* AppNavigationBarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9882552826234ACD00126B2B /* AppNavigationBarCustom.swift */; };
+		98B6DDCC26218197003078F8 /* SimpleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6DDCB26218197003078F8 /* SimpleText.swift */; };
+		98B6DDD1262181A4003078F8 /* SimpleOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B6DDD0262181A4003078F8 /* SimpleOne.swift */; };
 		98B87B3D26119F2F00204D06 /* Talysh_DisctionaryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B87B3C26119F2F00204D06 /* Talysh_DisctionaryApp.swift */; };
 		98B87B3F26119F2F00204D06 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B87B3E26119F2F00204D06 /* ContentView.swift */; };
 		98B87B4126119F3200204D06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B87B4026119F3200204D06 /* Assets.xcassets */; };
 		98B87B4426119F3200204D06 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B87B4326119F3200204D06 /* Preview Assets.xcassets */; };
 		98B87B4F26119F3200204D06 /* Talysh_DisctionaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B87B4E26119F3200204D06 /* Talysh_DisctionaryTests.swift */; };
 		98B87B5A26119F3200204D06 /* Talysh_DisctionaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B87B5926119F3200204D06 /* Talysh_DisctionaryUITests.swift */; };
+		98B87B6B2611C7C600204D06 /* MenusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98B87B6A2611C7C600204D06 /* MenusView.swift */; };
+		98D0BBC726610F4800E48765 /* View3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D0BBBC26610F4700E48765 /* View3.swift */; };
+		98D0BBC826610F4800E48765 /* SettinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D0BBBD26610F4700E48765 /* SettinView.swift */; };
+		98D0BBC926610F4800E48765 /* View2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D0BBBE26610F4700E48765 /* View2.swift */; };
+		98D0BBCA26610F4800E48765 /* EnumDicti.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D0BBBF26610F4800E48765 /* EnumDicti.swift */; };
+		98D0BBCB26610F4800E48765 /* View1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D0BBC026610F4800E48765 /* View1.swift */; };
+		98D0BBCC26610F4800E48765 /* SubsrcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D0BBC126610F4800E48765 /* SubsrcView.swift */; };
+		98D0BBCD26610F4800E48765 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D0BBC226610F4800E48765 /* SharedData.swift */; };
+		98D0BBCE26610F4800E48765 /* losObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D0BBC326610F4800E48765 /* losObject.swift */; };
+		98D0BBCF26610F4800E48765 /* ViewEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D0BBC426610F4800E48765 /* ViewEnums.swift */; };
+		98D0BBD026610F4800E48765 /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D0BBC526610F4800E48765 /* ContactsView.swift */; };
+		98D0BBD126610F4800E48765 /* DataHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D0BBC626610F4800E48765 /* DataHelp.swift */; };
+		98D0BBD326610F8B00E48765 /* db_data.db in Resources */ = {isa = PBXBuildFile; fileRef = 98D0BBD226610F8A00E48765 /* db_data.db */; };
+		98D0BBD8266111EA00E48765 /* AlphaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98D0BBD7266111EA00E48765 /* AlphaView.swift */; };
+		DEEBDF2DEBF3C2AB22DCD17D /* Pods_Talysh_Disctionary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F470191D72AC9D0404D1A5B6 /* Pods_Talysh_Disctionary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +56,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		315EC62E1FF84FD9C41C1C73 /* Pods-Talysh Disctionary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talysh Disctionary.debug.xcconfig"; path = "Target Support Files/Pods-Talysh Disctionary/Pods-Talysh Disctionary.debug.xcconfig"; sourceTree = "<group>"; };
+		90A069B15A675D722A02E5BE /* Pods-Talysh Disctionary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Talysh Disctionary.release.xcconfig"; path = "Target Support Files/Pods-Talysh Disctionary/Pods-Talysh Disctionary.release.xcconfig"; sourceTree = "<group>"; };
+		98096D2D267FD94D0041BB64 /* StringLocalize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLocalize.swift; sourceTree = "<group>"; };
+		98096D2F267FD96A0041BB64 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		98096D31267FD9DA0041BB64 /* LocalizationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationService.swift; sourceTree = "<group>"; };
+		98096D35267FDC640041BB64 /* az */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = az; path = az.lproj/Localizable.strings; sourceTree = "<group>"; };
+		98096D36267FDCD80041BB64 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Localizable.strings; sourceTree = "<group>"; };
+		98096D38267FDDFB0041BB64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		98684D9A267751D8008807AC /* ScrollElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollElement.swift; sourceTree = "<group>"; };
+		98684DA426779BF5008807AC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9882552826234ACD00126B2B /* AppNavigationBarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationBarCustom.swift; sourceTree = "<group>"; };
+		98B6DDCB26218197003078F8 /* SimpleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleText.swift; sourceTree = "<group>"; };
+		98B6DDD0262181A4003078F8 /* SimpleOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleOne.swift; sourceTree = "<group>"; };
 		98B87B3926119F2F00204D06 /* Talysh Disctionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Talysh Disctionary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B87B3C26119F2F00204D06 /* Talysh_DisctionaryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talysh_DisctionaryApp.swift; sourceTree = "<group>"; };
 		98B87B3E26119F2F00204D06 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +81,21 @@
 		98B87B5526119F3200204D06 /* Talysh DisctionaryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Talysh DisctionaryUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B87B5926119F3200204D06 /* Talysh_DisctionaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talysh_DisctionaryUITests.swift; sourceTree = "<group>"; };
 		98B87B5B26119F3200204D06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98B87B6A2611C7C600204D06 /* MenusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenusView.swift; sourceTree = "<group>"; };
+		98D0BBBC26610F4700E48765 /* View3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View3.swift; sourceTree = "<group>"; };
+		98D0BBBD26610F4700E48765 /* SettinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettinView.swift; sourceTree = "<group>"; };
+		98D0BBBE26610F4700E48765 /* View2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View2.swift; sourceTree = "<group>"; };
+		98D0BBBF26610F4800E48765 /* EnumDicti.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumDicti.swift; sourceTree = "<group>"; };
+		98D0BBC026610F4800E48765 /* View1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View1.swift; sourceTree = "<group>"; };
+		98D0BBC126610F4800E48765 /* SubsrcView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubsrcView.swift; sourceTree = "<group>"; };
+		98D0BBC226610F4800E48765 /* SharedData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
+		98D0BBC326610F4800E48765 /* losObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = losObject.swift; sourceTree = "<group>"; };
+		98D0BBC426610F4800E48765 /* ViewEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewEnums.swift; sourceTree = "<group>"; };
+		98D0BBC526610F4800E48765 /* ContactsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		98D0BBC626610F4800E48765 /* DataHelp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHelp.swift; sourceTree = "<group>"; };
+		98D0BBD226610F8A00E48765 /* db_data.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = db_data.db; sourceTree = "<group>"; };
+		98D0BBD7266111EA00E48765 /* AlphaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphaView.swift; sourceTree = "<group>"; };
+		F470191D72AC9D0404D1A5B6 /* Pods_Talysh_Disctionary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Talysh_Disctionary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEEBDF2DEBF3C2AB22DCD17D /* Pods_Talysh_Disctionary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,13 +124,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9737D9B21884A510FE61FB9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F470191D72AC9D0404D1A5B6 /* Pods_Talysh_Disctionary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98B6DDCA26218185003078F8 /* ElementsText */ = {
+			isa = PBXGroup;
+			children = (
+				98B6DDCB26218197003078F8 /* SimpleText.swift */,
+				98B6DDD0262181A4003078F8 /* SimpleOne.swift */,
+				9882552826234ACD00126B2B /* AppNavigationBarCustom.swift */,
+			);
+			path = ElementsText;
+			sourceTree = "<group>";
+		};
 		98B87B3026119F2F00204D06 = {
 			isa = PBXGroup;
 			children = (
+				98684DA526779BF5008807AC /* Localizable.strings */,
 				98B87B3B26119F2F00204D06 /* Talysh Disctionary */,
 				98B87B4D26119F3200204D06 /* Talysh DisctionaryTests */,
 				98B87B5826119F3200204D06 /* Talysh DisctionaryUITests */,
 				98B87B3A26119F2F00204D06 /* Products */,
+				C261F526481D7F9936F89FD3 /* Pods */,
+				9737D9B21884A510FE61FB9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,11 +168,30 @@
 		98B87B3B26119F2F00204D06 /* Talysh Disctionary */ = {
 			isa = PBXGroup;
 			children = (
+				98D0BBD7266111EA00E48765 /* AlphaView.swift */,
+				98D0BBD226610F8A00E48765 /* db_data.db */,
+				98D0BBC526610F4800E48765 /* ContactsView.swift */,
+				98D0BBC626610F4800E48765 /* DataHelp.swift */,
+				98D0BBBF26610F4800E48765 /* EnumDicti.swift */,
+				98D0BBC326610F4800E48765 /* losObject.swift */,
+				98D0BBBD26610F4700E48765 /* SettinView.swift */,
+				98D0BBC226610F4800E48765 /* SharedData.swift */,
+				98D0BBC126610F4800E48765 /* SubsrcView.swift */,
+				98D0BBC026610F4800E48765 /* View1.swift */,
+				98684D9A267751D8008807AC /* ScrollElement.swift */,
+				98D0BBBE26610F4700E48765 /* View2.swift */,
+				98D0BBBC26610F4700E48765 /* View3.swift */,
+				98D0BBC426610F4800E48765 /* ViewEnums.swift */,
+				98B6DDCA26218185003078F8 /* ElementsText */,
 				98B87B3C26119F2F00204D06 /* Talysh_DisctionaryApp.swift */,
+				98B87B6A2611C7C600204D06 /* MenusView.swift */,
 				98B87B3E26119F2F00204D06 /* ContentView.swift */,
 				98B87B4026119F3200204D06 /* Assets.xcassets */,
 				98B87B4526119F3200204D06 /* Info.plist */,
 				98B87B4226119F3200204D06 /* Preview Content */,
+				98096D2D267FD94D0041BB64 /* StringLocalize.swift */,
+				98096D2F267FD96A0041BB64 /* Language.swift */,
+				98096D31267FD9DA0041BB64 /* LocalizationService.swift */,
 			);
 			path = "Talysh Disctionary";
 			sourceTree = "<group>";
@@ -130,6 +222,15 @@
 			path = "Talysh DisctionaryUITests";
 			sourceTree = "<group>";
 		};
+		C261F526481D7F9936F89FD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				315EC62E1FF84FD9C41C1C73 /* Pods-Talysh Disctionary.debug.xcconfig */,
+				90A069B15A675D722A02E5BE /* Pods-Talysh Disctionary.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98B87B5E26119F3200204D06 /* Build configuration list for PBXNativeTarget "Talysh Disctionary" */;
 			buildPhases = (
+				3D439DEC8B33CD3040EDC9AA /* [CP] Check Pods Manifest.lock */,
 				98B87B3526119F2F00204D06 /* Sources */,
 				98B87B3626119F2F00204D06 /* Frameworks */,
 				98B87B3726119F2F00204D06 /* Resources */,
+				6A9C03AD968967889CA03B59 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -215,6 +318,9 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
+				az,
+				fa,
 			);
 			mainGroup = 98B87B3026119F2F00204D06;
 			productRefGroup = 98B87B3A26119F2F00204D06 /* Products */;
@@ -233,8 +339,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98684DA326779BF5008807AC /* Localizable.strings in Resources */,
 				98B87B4426119F3200204D06 /* Preview Assets.xcassets in Resources */,
 				98B87B4126119F3200204D06 /* Assets.xcassets in Resources */,
+				98D0BBD326610F8B00E48765 /* db_data.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +362,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D439DEC8B33CD3040EDC9AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Talysh Disctionary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A9C03AD968967889CA03B59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Talysh Disctionary/Pods-Talysh Disctionary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Talysh Disctionary/Pods-Talysh Disctionary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Talysh Disctionary/Pods-Talysh Disctionary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		98B87B3526119F2F00204D06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98D0BBCB26610F4800E48765 /* View1.swift in Sources */,
+				98096D2E267FD94D0041BB64 /* StringLocalize.swift in Sources */,
+				98D0BBCA26610F4800E48765 /* EnumDicti.swift in Sources */,
+				98096D30267FD96A0041BB64 /* Language.swift in Sources */,
+				98B87B6B2611C7C600204D06 /* MenusView.swift in Sources */,
+				98D0BBC926610F4800E48765 /* View2.swift in Sources */,
+				9882552926234ACE00126B2B /* AppNavigationBarCustom.swift in Sources */,
+				98D0BBD8266111EA00E48765 /* AlphaView.swift in Sources */,
+				98096D32267FD9DA0041BB64 /* LocalizationService.swift in Sources */,
+				98D0BBCF26610F4800E48765 /* ViewEnums.swift in Sources */,
+				98D0BBC726610F4800E48765 /* View3.swift in Sources */,
+				98D0BBD026610F4800E48765 /* ContactsView.swift in Sources */,
+				98B6DDD1262181A4003078F8 /* SimpleOne.swift in Sources */,
+				98D0BBD126610F4800E48765 /* DataHelp.swift in Sources */,
 				98B87B3F26119F2F00204D06 /* ContentView.swift in Sources */,
+				98D0BBCC26610F4800E48765 /* SubsrcView.swift in Sources */,
+				98D0BBC826610F4800E48765 /* SettinView.swift in Sources */,
+				98B6DDCC26218197003078F8 /* SimpleText.swift in Sources */,
+				98D0BBCE26610F4800E48765 /* losObject.swift in Sources */,
 				98B87B3D26119F2F00204D06 /* Talysh_DisctionaryApp.swift in Sources */,
+				98684D9B267751D8008807AC /* ScrollElement.swift in Sources */,
+				98D0BBCD26610F4800E48765 /* SharedData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,11 +465,26 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		98684DA526779BF5008807AC /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98684DA426779BF5008807AC /* ru */,
+				98096D35267FDC640041BB64 /* az */,
+				98096D36267FDCD80041BB64 /* fa */,
+				98096D38267FDDFB0041BB64 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		98B87B5C26119F3200204D06 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -347,7 +532,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -361,6 +546,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -402,7 +588,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -414,12 +600,15 @@
 		};
 		98B87B5F26119F3200204D06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 315EC62E1FF84FD9C41C1C73 /* Pods-Talysh Disctionary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"Talysh Disctionary/Preview Content\"";
-				DEVELOPMENT_TEAM = HPX765MXL5;
+				DEVELOPMENT_TEAM = 9NS2B7T927;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Talysh Disctionary/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -427,8 +616,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.convertmiditowav.loscenekita.Talysh-Disctionary";
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loscenekita.talyshdisctionary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -436,12 +627,15 @@
 		};
 		98B87B6026119F3200204D06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90A069B15A675D722A02E5BE /* Pods-Talysh Disctionary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"Talysh Disctionary/Preview Content\"";
-				DEVELOPMENT_TEAM = HPX765MXL5;
+				DEVELOPMENT_TEAM = 9NS2B7T927;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Talysh Disctionary/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -449,8 +643,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.convertmiditowav.loscenekita.Talysh-Disctionary";
+				MARKETING_VERSION = 1.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.loscenekita.talyshdisctionary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
