@@ -49,7 +49,8 @@ class DataHelp {
          
        }
     
-    func TranslateWord(libraryActive: String, transS: String) throws -> [WordToSee] { // was String
+    func TranslateWord(libraryActive: String, libraryActive2: String, transS: String) throws -> [WordToSee] { // was String
+        
         
         wordss.removeAll()
   
@@ -57,6 +58,8 @@ class DataHelp {
         var lizad2 : String = ""
         var lizard3 : String = ""
        
+        if libraryActive != "ty" {
+         
         if(libraryActive == "en"){
             lizad2 = transS.lowercased()
             lizard3 = transS.lowercased()
@@ -78,7 +81,11 @@ class DataHelp {
         }else{
             lizad2 = transS.lowercased()
         }
+           
+            
+      //  }
          
+        
       
         print(" my word to translate2  = \(lizad2)")
         print(" my word to translate3  = \(lizard3)")
@@ -89,7 +96,7 @@ class DataHelp {
         let word = Expression<String>("word")
         let transL = Expression<String>("translate")
         
-        if !lizad2.isEmpty{
+        if !lizad2.isEmpty {
             print(" not empty !! ")
             let ase = users.filter(word.like("%" + lizad2 + "%")).limit(10)
 
@@ -101,7 +108,7 @@ class DataHelp {
             }
         }
         
-        if !lizard3.isEmpty{
+        if !lizard3.isEmpty {
             print(" not empty !! ")
             let ase = users.filter(word.like("%" + lizard3 + "%")).limit(10) // was without limit
 
@@ -148,6 +155,50 @@ class DataHelp {
             wordss.append(WordToSee(mainWord: b, Translate: a))
             
         }
+        
+    } else {
+    
+         print(" translate from talysh")
+     
+        
+        lizad2 = transS.lowercased()
+        lizard3 = transS.lowercased()
+        let word = Expression<String>("word")
+        let transL = Expression<String>("translate")
+        
+        let users = Table(libraryActive2) // was "ru"
+         
+        
+        if !lizard3.isEmpty {
+            print(" not empty !! ")
+            let ase = users.filter(transL.like("%" + lizard3 + "%")).limit(10) // was without limit
+
+            for wkej3 in try db!.prepare(ase){
+
+                let sdw = try wkej3.get(word)
+                let bub = try wkej3.get(transL)
+                wordss.append(WordToSee(mainWord: sdw, Translate: bub))
+            }
+        }
+        
+        
+        
+        for  query23 in try db!.prepare(users.where(word == lizard3).limit(1)){
+            a = try query23.get(transL)
+            let b = try query23.get(word)
+             
+            print( "word and translate == \(a) and \(b)")
+            
+            if let indexRemove = wordss.firstIndex(of: WordToSee(mainWord: b, Translate: a)){
+                wordss.remove(at: indexRemove)
+            }
+             
+            wordss.append(WordToSee(mainWord: b, Translate: a))
+         
+          }
+         
+     //
+     }
          
       
         return wordss

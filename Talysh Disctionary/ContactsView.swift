@@ -11,19 +11,33 @@ import SwiftUI
 
 struct ContactsView: View {
     
+    @AppStorage("language")
+    private var language = LocalizationService.shared.language
+    
+    
+    
     var body: some View {
          
-        ZStack(alignment: .topLeading) {
+        VStack {
            
-                Color.white
+               
             
-                Text("Email: tolyshnoma@gmail.com")
-                    .foregroundColor(.black)
-                
-            }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
-        .padding( 20 )
+            Text("textBlago1".localized(language)).bold()
+                .foregroundColor(.black) + Text("textBlago2".localized(language)).foregroundColor(.blue) + Text("textBlago3".localized(language)).bold()
+              
+             Spacer()
+            Spacer()
+             
+            }
+        
+        //.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
+        
+        .padding( 16 )
+        .padding(.top, 10)
         
     }
+    
+    //.Enviroment(\.)
 }
 
 

@@ -18,6 +18,7 @@ struct View2: View {
     var body: some View {
         ZStack{
             ScrollView {
+                
             VStack{
                 Spacer()
                 
@@ -32,60 +33,41 @@ struct View2: View {
                 Spacer()
                 Spacer()
                 
-    //            Text("Приложение «Talysh Dictionary (by F. Aboszoda )» предлагает электронные словари с талышского языка сразу на 4 языка: русский, азербайджанский (тюркский), английский и персидский.Талыши проживают на юго-западе Прикаспия – на границе Ирана и Азербайджана. Классифицируется талышкий следующим образом: ")
-    //                .foregroundColor(Color.black)
-    //
-    //                + Text("индоевропейская языковая семья")
-    //                .underline()
-    //                .foregroundColor(Color.black)
-    //
-    //                + Text(" - ")
-    //                .foregroundColor(Color.black)
-    //                + Text("арийская ветвь")
-    //                .underline()
-    //                .foregroundColor(Color.black)
-                    //+ Text(" - ")
-                    //.foregroundColor(Color.black)
+                
+                
+                if language == .farci {
+                     
                     
-                
-                //+ Text("sdfqwefwef")
-    //                + Text("иранская группа")
-    //                .underline()
-    //                .foregroundColor(Color.black)
-                
-                 
-                 // Text(NSLocalizedString("hello", comment: "sfwf"))
-                
-                //     let buttonNK = NSLocalizedString("hello", comment: "sfwf")
-            //    print(" my d \(buttonNK)"
-               
-               // if ss2.shar.valueLang {
-                    
+                    Text("FarciBlago".localized(.english_us)).foregroundColor(Color.black)
+                        .multilineTextAlignment(.leading)
+                        .padding(.horizontal, 16.0)
+                     
+                }else {
+
                     Group {
-                       
-                        Text("a1".localized(language)) +
-                       
-                            Text("a2".localized(language)).underline() +
+                        
+                       MainText1()
+                          
                         
                             Text("a3".localized(language)) +
+                            Text("a31".localized(language)).underline() +
+                            Text("a30End".localized(language)) +
+                            Text("a4".localized(language)).underline()
+                           
+                                
+                            MainText3()
                         
-                            Text("a4".localized(language)).underline() +
-                        
-                            Text("a5".localized(language)) +
-                            Text("a6".localized(language)).underline() +
-                            Text("a7".localized(language)) +
-                            Text("a8".localized(language)).underline() +
-                            Text("a9".localized(language)) +
-                          
-                            Text("a10".localized(language)).underline()
+                            Text("a11".localized(language)) +
+                            Text("a12".localized(language)).bold() +
+                            Text("a_azer".localized(language))
                          
                         
                     } .foregroundColor(Color.black)
                     .multilineTextAlignment(.leading)
                     .padding(.horizontal, 16.0)
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
+                    //.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
                     
-                    
+                }
                     
 //                }else {
 //

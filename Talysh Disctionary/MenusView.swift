@@ -47,8 +47,9 @@ struct MenusView: View {
                 }
 
                 //.padding(.top, 20)
+                // was icons == rectangle.stack.person.crop.fill"
                 HStack {
-                    Image(systemName: "rectangle.stack.person.crop.fill")
+                    Image(systemName: "heart")
                         .foregroundColor(.black)
                     Text("contacts".localized(language))
                         .foregroundColor(.black)

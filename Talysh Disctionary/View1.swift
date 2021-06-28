@@ -17,96 +17,134 @@ struct View1: View {
     @State private var title: String = ""
     @State private var titleInput: String = ""
     // was // @State private var selectionDicti1 = EnumDicti.dictiRus
-    @State private var selectionDicti1 = LocalizationService.shared.backLang()
-    @State private var selectionDicti2 = EnumDicti.dictiTalysh
+    @State private var selectionDicti1 = Languages.rus
+    @State private var selectionDicti2 = Languages.taly
     @State private var translateIs = true
     @State private var wordToSee : [WordToSee]?
     @EnvironmentObject var ss2 : losObject
-   
+     
     
-    
-    // was EnumDicti
-    func losExcelent(trans: Languages, namess : String) throws -> [WordToSee] { // was String
-          
-        var aLib : String = "ru"
-          
-          
-          print(" my string to translate == \(namess)")
-          
-        switch trans {
-        case Languages.rus:
+    func returnNameLangu(lib: Languages) -> String {
+        
+        var nameLanguage : String = ""
+         
+        switch lib {
+        case .rus:
             print(" ru is case ")
-            aLib = "ru"
+            nameLanguage = "ru"
             
-        case Languages.Eng:
+        case .Eng:
             print(" en is case ")
-            aLib = "en"
+            nameLanguage = "en"
             
-        case Languages.azer:
+        case .azer:
             print(" az is case ")
-            aLib = "az"
+            nameLanguage = "az"
             
-        case Languages.farci:
+        case .farci:
             print(" fa is case ")
-            aLib = "fa"
+            nameLanguage = "fa"
+            
+        case .taly:
+        print(" talys")
+            nameLanguage = "ty"
+             
             
         }
-         
-        let buttonsTL = NSLocalizedString("hello", comment: "the name of ")
-        print(" my b \(buttonsTL)")
         
         
-        let buttonNK = NSLocalizedString("hello", comment: "sfwf")
-        print(" my d \(buttonNK)")
-         
-        let a = try ss2.DataLos?.TranslateWord(libraryActive:  aLib, transS: namess)
+        return nameLanguage
+    }
+    
+    
+    // was EnumDicti  rans2: selectionDicti2,
+    func losExcelent(trans: Languages, trans2: Languages, namess : String) throws -> [WordToSee] { // was String
+          
+        let nameLibFromTranslate = returnNameLangu(lib: trans)
+        let nameLibToTranslate = returnNameLangu(lib: trans2)
+          
+          print(" my string to translate == \(namess)")
+  
+        let a = try ss2.DataLos?.TranslateWord(libraryActive:  nameLibFromTranslate, libraryActive2: nameLibToTranslate, transS: namess)
+     
+       // let a = try ss2.DataLos?.TranslateWord(libraryActive:  aLib, transS: namess)
        
-        print(" my a in translates == \(String(describing: a))")
         return a!
     }
     
     
     var body: some View {
+        
         ZStack{
             VStack(spacing: 15){
                  
-                HStack() {
-                     
+                HStack{
+                    
                     if #available(iOS 14.0, *) {
-                        Picker(selectionDicti1.description, selection: $selectionDicti1){
-                            Text(Languages.rus.description).tag(Languages.rus)
-                            Text(Languages.Eng.description).tag(Languages.Eng)
-                            Text(Languages.azer.description).tag(Languages.azer)
-                            Text(Languages.farci.description).tag(Languages.farci)
-                        }.padding()
+                        Picker(selectionDicti1.description.localized(language), selection: $selectionDicti1){
+                            Text("lanRu".localized(language)).tag(Languages.rus)
+                            Text("lanEn".localized(language)).tag(Languages.Eng)
+                            Text("lanFa".localized(language)).tag(Languages.farci)
+                            Text("lanAz".localized(language)).tag(Languages.azer)
+                            Text("lanTy".localized(language)).tag(Languages.taly)
+                        
+                        } .padding( .all, 14)
                         .pickerStyle(MenuPickerStyle())
+                        .onChange(of: selectionDicti1, perform: { value in
+                          
+                         
+                            if( selectionDicti1 == .taly){
+                             
+                                if selectionDicti2 == .taly {
+                                    selectionDicti2 = .Eng
+                                }
+                            } else {
+                                
+                                selectionDicti2 = .taly
+                            } } )
+                        
                     } else {
                         // Fallback on earlier versions
                     }
                     
                     
                     Image(systemName: "arrow.left.arrow.right").font(.system(size: 20)).onTapGesture {
-                        print("change lang ")
                         
-                        //let atempDicti = selectionDicti1
-                      //  selectionDicti1 = selectionDicti2
-                      //  selectionDicti2 = atempDicti
+                        
+                        let atempDicti = selectionDicti1
+                        selectionDicti1 = selectionDicti2
+                        selectionDicti2 = atempDicti
                         
                     }
                     
                     if #available(iOS 14.0, *) {
-                        Picker(selectionDicti2.description, selection: $selectionDicti2){
-                            Text(ss2.shar.valueLang ? "Russian" : "Русский ").tag(ss2.shar.valueLang ? EnumDicti.dictiRusEn : EnumDicti.dictiRus)
-                            Text(ss2.shar.valueLang ? "Talysh" : "Талышский").tag(ss2.shar.valueLang ? EnumDicti.dictiTalyshEn : EnumDicti.dictiTalysh)
-                            Text(ss2.shar.valueLang ? "Azerbaijani" : "Азербайджанский").tag(ss2.shar.valueLang ? EnumDicti.dictiFarsiEn : EnumDicti.dictiFarsi)
-                            Text(ss2.shar.valueLang ? "English" : "Английский").tag(ss2.shar.valueLang ? EnumDicti.dictiEngEn : EnumDicti.dictiEng)
-                            Text(ss2.shar.valueLang ? "Persian" : "Персидский").tag(ss2.shar.valueLang ? EnumDicti.dictiPercEn :EnumDicti.dictiPerc)
-                        }.padding()
+                        Picker(selectionDicti2.description.localized(language), selection: $selectionDicti2){
+                            Text("lanRu".localized(language)).tag(Languages.rus)
+                            Text("lanEn".localized(language)).tag(Languages.Eng)
+                            Text("lanFa".localized(language)).tag(Languages.farci)
+                            Text("lanAz".localized(language)).tag(Languages.azer)
+                            Text("lanTy".localized(language)).tag(Languages.taly)
+                        }
+                        .padding(.all, 14)
                         .pickerStyle(MenuPickerStyle())
+                        .onChange(of: selectionDicti2, perform: { value in
+                             
+                            if selectionDicti2 == .taly {
+                                
+                                if selectionDicti1 == .taly {
+                                    selectionDicti1 = .rus
+                                }
+                            } else {
+                                selectionDicti1 = .taly
+                            }
+                              
+                        })
                     } else {
                         // Fallback on earlier versions
                     }
                 }
+                     
+                  
                 //Spacer()
                 
                 
@@ -117,9 +155,7 @@ struct View1: View {
                       
                         Text("noTrans".localized(language)).font(.system(size: 24)).bold().padding(.top, 40)
                          
-                         
                     }else {
-                        
                         
                        // for wo in wordToSee {
                         ForEach(wordToSee!, id: \.self) { worr in
@@ -127,9 +163,6 @@ struct View1: View {
                         }
                     }
                 }
-                
-              
-                 
                
                 TextField("enterText1".localized(language), text: $titleInput, onCommit: {
                      print(" my input test == \($titleInput)")
@@ -153,7 +186,7 @@ struct View1: View {
                     do{
                            wordToSee?.removeAll()
                            //hideKeyboard()
-                           wordToSee = try losExcelent(trans: selectionDicti1, namess: value)
+                           wordToSee = try losExcelent(trans: selectionDicti1, trans2: selectionDicti2, namess: value)
                     
                            wordToSee?.reverse()
                     
@@ -166,39 +199,12 @@ struct View1: View {
                    } catch {
                     print("Invalid 2233S election.")}
                     
-                }
-                }
-                    )
+                } })
                 
-                
-//                HStack{
-//                    Spacer()
-//                    Button("transbutton".localized(language)){
-//
-//                        do {
-//
-//                            wordToSee?.removeAll()
-//                            hideKeyboard()
-//                            wordToSee = try losExcelent(trans: selectionDicti1, namess: titleInput)
-//
-//                            wordToSee?.reverse()
-//
-//                            if wordToSee!.isEmpty{
-//                                translateIs = true
-//
-//                            }else {
-//                                translateIs = false
-//                            }
-//
-//                            print("Sus")
-//                        } catch {
-//                        print("Invalid 2233S election.")}
-//
-//                    }
-//                }.padding()
-            }
+             } // vertical
+            } // zstack
         }
-    }
+  //  }
     
     func assignTitle(){
         self.title = self.titleInput

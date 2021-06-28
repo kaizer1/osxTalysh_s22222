@@ -10,7 +10,10 @@
 
 "hello" = "About application";
 "Select_Language" = "Select languages:";
-"contacts" = "Contact";
+"contacts" = "Charity";
+"textBlago1"= "The electronic «Talysh Dictionary (by F. Aboszoda)» is a free product of the scientific project «TOLYSHNOMA».  Anyone who wants to financially support the quality of this dictionary at the proper level, or to help to create other scientific products, please write to e-mail address:";
+"textBlago2" = "tolyshnoma@gmail.com";
+"textBlago3" = "";
 "Alphabet" = "Alphabet";
 "Translate" = "Translator";
 "Settings" = "Setting";
@@ -19,17 +22,52 @@
 "noTrans" = "Sorry, not available translate to this word";
 "Talysh_Dictionary" = "Talysh Dictionary";
 
-"a1" = "  Talyshi Dictionary (by F. Aboszoda) application offers electronic dictionary from the Talyshi language to 4 different languages: Russian, Turkic (Azerbaijani), English and Persian. \n   The Talysh live to the south-west of the Caspian Sea on the Iran-Azerbaijan border. The Talyshi language is classified as follows: ";
+
+
+"lanRu" = "Russian";
+"lanEn" = "English";
+"lanFa" = "Persian";
+"lanAz" = "Azerbaijani";
+"lanTy" = "Talysh";
+
+"FarciBlago" = "اپلیکیشن Talysh Dictionary (by F.Aboszoda) مترجم الکترونیک است که از چهار زبان به زبان تالشی ترجمه میکند: روسی، ترکی، انگلیسی و فارسی.
+
+تالشان مردم بومی جنوب غرب دریای خزر است، که نزدیک مرز ایران و آذربایجان زندگی می کنند. زبان تالشی متعلق به زیرگروه زبانهای کاسپین، گروه زبانهای ایرانی شمال غربی از شاخه زبانهای ایرانی در خانواده زبانهای هندواروپایی می باشد. زبان تالشی معاصر، حاصل پدیده دگرگونی زبانی در طی ادوار مختلف است که این پروسه دگرگونی و تغییر را میتوان بدین صورت خلاصه کرد: زبان آریایی، اوستایی، مادی، پهلویِ پارتی (گویش آذری), تالشی‌.
+
+شایان ذکر است که گویشوران تاتی که در نقاط مختلفی در شمال غرب ایران ساکن هستند نیز متعلق به گروه قومی تالش می‌باشند و به گویشی نزدیک به گویش همسایگان تالش زبان خود تکلم میکنند.
+
+همه چهار تا لغتنامه که برای ساختن این اپلیکیشن استفاده شدند، به دست دانشمند فخرالدین عباس زاده (عباسوف) نوشته شده بودند. فخرالدین عباس زاده یک سیاست‌شناس، زبانشناس و روزنامه‌نگار تالشی است که در آذربایجان به دنیا آمدند. برای این اپلیکیشن لغتنامه روسی به تالشی (۶۰۰۰۰ واژه، مونیخ، ۲۰۱۲ م.)، ترکی به تالشی (۵۵۰۰۰ واژه، باکو، ۲۰۱۵ م.)، انگلیسی به تالشی (۲۵۰۰۰۰ واژه، مونیخ، ۲۰۱۲ م.)، فارسی به تالشی (هنوز چاپ نشد) استفاده شدند.
+
+اپلیکیشن Talysh Dictionary پروژه اتحاد دانشمندان Tolyshnoma است، که با دست اتحاد جوانان تالشی (مسکو، روسیه) و فرهنگستان ملی تالش (مینسک، بلاروس) ساخته شده. این اپلیکیشن با حمایت مالی صندوق فرهنگی و علمی تالش تولید شده است. (سن پترزبورگ، روسیه)
+
+اگر پیشنهادی دارید یا اشتباه پیدا کردید، لطفاً به ایمیل ما بنویسید: tolyshnoma@gmail.com";
+
+//  Talyshi Dictionary (by F. Aboszoda)
+"a1" = "";
+//"a112" = "«Talysh Dictionary (by F. Aboszoda )»";
+"a13" = " application offers electronic dictionary from the Talyshi language to 4 different languages: Russian, Turkic (Azerbaijani), English and Persian. \n \n  The Talysh live to the south-west of the Caspian Sea on the Iran-Azerbaijan border. The Talyshi language is classified as follow: ";
 "a2" = "Indo-European language family - Aryan branch - Iranian group - Northwestern subgroup - Caspian languages - Talyshi. ";
-"a3" = "The Tati population living in many areas of north-western Iran are an ethnographic group of the Talysh and speak dialects similar to one of the nearby Talyshi dialects.\n  The author of all 4 dictionaries is a scholar (philosopher, political scientist, philologist), journalist, public and political figure Fakhraddin Aboszoda (Abbasov). Some of the dictionaries were republished in an updated version several times. In this application you will find: ";
-"a4" = "Russian-Talyshi dictionary (82,000 words;  Baku, 2006, 2008), Turkic-Talyshi dictionary (55,000 words; Baku, 2015), English-Talyshi dictionary (250,000 words; Munich, 2012), Persian-Talyshi dictionary (not published).\n";
-"a5" = "  'Talyshi Dictionary (by F. Aboszoda)' application was created as a part of scientific educational project \"TOLYSHNOMA\", created by the ";
+
+"a3" = "The Talyshi language emerged in a consistent transformations of:";
+"a31" = "Aryan - Avestan - Median - Parthian Pahlavi (Azari dialect) - Talyshi. ";
+"a30End" = "The Tati population living in many areas of north-western Iran are an ethnographic group of the Talysh and speak dialects similar to one of the nearby Talyshi dialects.\n  \n  The author of all 4 dictionaries is a scholar (philosopher, political scientist, philologist), journalist, public and political figure Fakhraddin Aboszoda (Abbasov). Some of the dictionaries were republished in an updated version several times. In this application you will find:";
+
+"a4" = "Russian-Talyshi dictionary (82,000 words;  Baku, 2006, 2008), Turkic-Talyshi dictionary (55,000 words; Baku, 2015), English-Talyshi dictionary (250,000 words; Munich, 2012), Persian-Talyshi dictionary (not published).\n";
+
+"a49" = "\n The";
+"a5" = "  «Talyshi Dictionary (by F. Aboszoda)» ";
+"a55" = "application was created as a part of scientific educational project";
+"a57" = " «TOLYSHNOMA»";
+"a58" = ", created by the ";
+//"a55" = "является продуктом научно-просветительского проекта «TOLYSHNOMA», созданного ";
 "a6" = "Union of Talysh Youth (Moscow, Russia) ";
 "a7" = "with the assistance of";
 "a8" = "The National Academy of Talysh (Minsk, Belarus).";
-"a9" = "The application was created with the financial support of the Government of ";
-"a10" = "Foundation of Talysh Culture and Science (Saint Petersburg).";
-
+"a9" = " The application was created with the financial support of the ";
+"a10" = "Talysh Culture and Science Foundation (Saint Petersburg, Russia).";
+"a11" = "\n  Dear subscriber, if you face error or have proposals for application please contact us via email:";
+"a12" = "tolyshnoma@gmail.com";
+"a_azer" = "";
 "about_main" = "<p>Приложение <strong>«</strong><strong>Talysh</strong> <strong>Dictionary</strong><strong>
 (</strong><strong>by</strong> <strong>F</strong><strong>. </strong><strong>Aboszoda</strong><strong>)»</strong> предлагает электронные словари с талышского языка сразу на 4 языка: русский, азербайджанский (тюркский), английский и персидский.</p>
 <p>Талыши проживают на юго-западе Прикаспия – на границе Ирана и Азербайджана. Классифицируется талышкий следующим образом: <u>индоевропейская языковая семья</u> – <u>арийская ветвь</u> – <u>иранская группа</u> – <u>северо-западная подгруппа</u> – <u>каспийские языки</u> – талышский язык. Талышский язык возник в последовательной трансформации в виде: <u>арийский</u> - <u>авестийский</u> - <u>мидийский</u> - <u>атропатенский (азери)</u> - <u>талышский</u>. Проживающие во многих областях северо-западного Ирана население тати являются этнографической группой талышей и говорят на диалектах, схожих с одним из близлежащих талышских диалектов.</p>

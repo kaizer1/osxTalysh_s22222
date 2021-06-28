@@ -10,10 +10,13 @@ import SwiftUI
 
 
 enum Languages : String, CaseIterable, Identifiable {
+  
     case rus
     case Eng
     case azer
     case farci
+    case taly
+    
     
     var id : String { self.rawValue }
     
@@ -21,18 +24,24 @@ enum Languages : String, CaseIterable, Identifiable {
        get {
          switch self {
            case .rus:
-             return "Русский"
+             return "lanRu"
          case .Eng:
-           return "English"
+           return "lanEn"
     
          case .azer:
-           return "Azərbaycan dili"
+           return "lanAz"
        case .farci:
-         return "فارسی"
+         return "lanFa"
+        
+         case .taly:
+            return "lanTy"
+            
          }
-       }
+    }
   }
 }
+
+
 
 
 struct SettinView: View {
@@ -56,11 +65,11 @@ struct SettinView: View {
                     Text("Select_Language".localized(language))
                     
                     if #available(iOS 14.0, *) {
-                        Picker(selection3.description, selection: $selection3){
-                            Text(Languages.rus.description).tag(Languages.rus)
-                            Text(Languages.Eng.description).tag(Languages.Eng)
-                            Text(Languages.azer.description).tag(Languages.azer)
-                            Text(Languages.farci.description).tag(Languages.farci)
+                        Picker(selection3.description.localized(language), selection: $selection3){
+                            Text(Languages.rus.description.localized(language)).tag(Languages.rus)
+                            Text(Languages.Eng.description.localized(language)).tag(Languages.Eng)
+                            Text(Languages.azer.description.localized(language)).tag(Languages.azer)
+                            Text(Languages.farci.description.localized(language)).tag(Languages.farci)
                             //Text("Azərbaycan dili").tag(false)
                            // Text("Farci").tag(false)
                         }.onChange(of: selection3, perform: { value in
@@ -83,6 +92,9 @@ struct SettinView: View {
                                                             LocalizationService.shared.language = .farci
                                 selection3 = .farci
                                 
+                                
+                            default :
+                                LocalizationService.shared.language = .english_us
                             }
                              
                         })

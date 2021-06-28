@@ -10,6 +10,8 @@
 		98096D2E267FD94D0041BB64 /* StringLocalize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98096D2D267FD94D0041BB64 /* StringLocalize.swift */; };
 		98096D30267FD96A0041BB64 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98096D2F267FD96A0041BB64 /* Language.swift */; };
 		98096D32267FD9DA0041BB64 /* LocalizationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98096D31267FD9DA0041BB64 /* LocalizationService.swift */; };
+		98153EE026884C8D00D7FF78 /* MainText1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98153EDF26884C8D00D7FF78 /* MainText1.swift */; };
+		98153EE226884FBC00D7FF78 /* MainText3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98153EE126884FBC00D7FF78 /* MainText3.swift */; };
 		98684D9B267751D8008807AC /* ScrollElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98684D9A267751D8008807AC /* ScrollElement.swift */; };
 		98684DA326779BF5008807AC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98684DA526779BF5008807AC /* Localizable.strings */; };
 		9882552926234ACE00126B2B /* AppNavigationBarCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9882552826234ACD00126B2B /* AppNavigationBarCustom.swift */; };
@@ -64,6 +66,8 @@
 		98096D35267FDC640041BB64 /* az */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = az; path = az.lproj/Localizable.strings; sourceTree = "<group>"; };
 		98096D36267FDCD80041BB64 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/Localizable.strings; sourceTree = "<group>"; };
 		98096D38267FDDFB0041BB64 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		98153EDF26884C8D00D7FF78 /* MainText1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainText1.swift; sourceTree = "<group>"; };
+		98153EE126884FBC00D7FF78 /* MainText3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainText3.swift; sourceTree = "<group>"; };
 		98684D9A267751D8008807AC /* ScrollElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollElement.swift; sourceTree = "<group>"; };
 		98684DA426779BF5008807AC /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		9882552826234ACD00126B2B /* AppNavigationBarCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationBarCustom.swift; sourceTree = "<group>"; };
@@ -182,6 +186,8 @@
 				98D0BBBE26610F4700E48765 /* View2.swift */,
 				98D0BBBC26610F4700E48765 /* View3.swift */,
 				98D0BBC426610F4800E48765 /* ViewEnums.swift */,
+				98153EDF26884C8D00D7FF78 /* MainText1.swift */,
+				98153EE126884FBC00D7FF78 /* MainText3.swift */,
 				98B6DDCA26218185003078F8 /* ElementsText */,
 				98B87B3C26119F2F00204D06 /* Talysh_DisctionaryApp.swift */,
 				98B87B6A2611C7C600204D06 /* MenusView.swift */,
@@ -409,12 +415,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98153EE026884C8D00D7FF78 /* MainText1.swift in Sources */,
 				98D0BBCB26610F4800E48765 /* View1.swift in Sources */,
 				98096D2E267FD94D0041BB64 /* StringLocalize.swift in Sources */,
 				98D0BBCA26610F4800E48765 /* EnumDicti.swift in Sources */,
 				98096D30267FD96A0041BB64 /* Language.swift in Sources */,
 				98B87B6B2611C7C600204D06 /* MenusView.swift in Sources */,
 				98D0BBC926610F4800E48765 /* View2.swift in Sources */,
+				98153EE226884FBC00D7FF78 /* MainText3.swift in Sources */,
 				9882552926234ACE00126B2B /* AppNavigationBarCustom.swift in Sources */,
 				98D0BBD8266111EA00E48765 /* AlphaView.swift in Sources */,
 				98096D32267FD9DA0041BB64 /* LocalizationService.swift in Sources */,
@@ -608,7 +616,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Talysh Disctionary/Preview Content\"";
-				DEVELOPMENT_TEAM = HPX765MXL5;
+				DEVELOPMENT_TEAM = 9NS2B7T927;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Talysh Disctionary/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -635,7 +643,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_ASSET_PATHS = "\"Talysh Disctionary/Preview Content\"";
-				DEVELOPMENT_TEAM = HPX765MXL5;
+				DEVELOPMENT_TEAM = 9NS2B7T927;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Talysh Disctionary/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
