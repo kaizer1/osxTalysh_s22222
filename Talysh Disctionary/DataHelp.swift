@@ -53,6 +53,7 @@ class DataHelp {
         
         
         wordss.removeAll()
+        
   
         var a : String = ""
         var lizad2 : String = ""
@@ -146,11 +147,9 @@ class DataHelp {
             a = try query22.get(transL)
             let b = try query22.get(word)
              
-            
             if let indexRemove = wordss.firstIndex(of: WordToSee(mainWord: b, Translate: a)){
                 wordss.remove(at: indexRemove)
             }
-             
              
             wordss.append(WordToSee(mainWord: b, Translate: a))
             
@@ -159,50 +158,104 @@ class DataHelp {
     } else {
     
          print(" translate from talysh")
-     
+      
+         
+        
         
         lizad2 = transS.lowercased()
         lizard3 = transS.lowercased()
         let word = Expression<String>("word")
         let transL = Expression<String>("translate")
+        var lase : String = ""
+        var lose1 : String = ""
+        
+        if lizad2.last == " "{
+          //  lizad2.append(" ")
+            print("a ksdjfklsdjfkl remove ats")
+          lizad2.removeLast()
+        }
+         
+            lizad2.append(",")
+             lose1 = " " + lizad2
+            
+       // }else {
+            print("append emplt ")
+            lizard3.append(";") // was " "
+            print("append == \(lizard3) ")
+            lase = " " + lizard3
+            print("lase == \(lase) ")
+       // }
+        
         
         let users = Table(libraryActive2) // was "ru"
          
+        if !lase.isEmpty {
+            print(" not empty 24 !! ")
+            let ase = users.filter(transL.like("%" + lase + "%")).limit(10)
+
+            for wkej2 in try db!.prepare(ase){
+
+                let sdw = try wkej2.get(word)
+                let bub = try wkej2.get(transL)
+                wordss.append(WordToSee(mainWord: sdw, Translate: bub))
+            }
+        }
+        
+        
+        // was  let ase = users.filter(transL.like("%" + lizard3 + "%")).limit(15)
         
         if !lizard3.isEmpty {
-            print(" not empty !! ")
-            let ase = users.filter(transL.like("%" + lizard3 + "%")).limit(10) // was without limit
+            print(" not empty  25 ! ")
+            let ase = users.filter(transL.like("%" + lose1 + "%")).limit(15) // was without limit
 
             for wkej3 in try db!.prepare(ase){
 
                 let sdw = try wkej3.get(word)
                 let bub = try wkej3.get(transL)
+                print(" wwod == \(sdw) and \(bub)")
                 wordss.append(WordToSee(mainWord: sdw, Translate: bub))
             }
         }
         
         
         
-        for  query23 in try db!.prepare(users.where(word == lizard3).limit(1)){
+        for  query23 in try db!.prepare(users.where(transL == lizard3).limit(1)){
+         
             a = try query23.get(transL)
             let b = try query23.get(word)
              
             print( "word and translate == \(a) and \(b)")
             
-            if let indexRemove = wordss.firstIndex(of: WordToSee(mainWord: b, Translate: a)){
-                wordss.remove(at: indexRemove)
-            }
+//            if let indexRemove = wordss.firstIndex(of: WordToSee(mainWord: b, Translate: a)){
+//                wordss.remove(at: indexRemove)
+//            }
              
             wordss.append(WordToSee(mainWord: b, Translate: a))
          
           }
          
-     //
+        for  query22 in try db!.prepare(users.where(transL == lizad2).limit(1)){
+           
+            a = try query22.get(transL)
+            let b = try query22.get(word)
+             
+              print(" lizard2 taly == w and tran \(b)   and \(a)")
+            
+//            if let indexRemove = wordss.firstIndex(of: WordToSee(mainWord: b, Translate: a)){
+//                wordss.remove(at: indexRemove)
+//            }
+             
+             
+            wordss.append(WordToSee(mainWord: b, Translate: a))
+            
+        }
+         
+     
      }
          
       
         return wordss
-    }
+}
     
     
     

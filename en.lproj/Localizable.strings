@@ -10,8 +10,12 @@
 
 "hello" = "About application";
 "Select_Language" = "Select languages:";
-"contacts" = "Charity";
-"textBlago1"= "The electronic «Talysh Dictionary (by F. Aboszoda)» is a free product of the scientific project «TOLYSHNOMA».  Anyone who wants to financially support the quality of this dictionary at the proper level, or to help to create other scientific products, please write to e-mail address:";
+"contacts" = "Information";
+
+// Please write all your questions and suggestions to the email tolyshnoma@gmail.com
+//  Anyone who wants to support financially the quality of this dictionary at the proper level, or to help to create other scientific products, please write to e-mail address:
+// For all questions and suggestions, please write to the address
+"textBlago1"= " The electronic \"Talysh Dictionary (by F. Aboszoda)\" is a free product of the scientific project \"TOLYSHNOMA\". Please write all your questions and suggestions to the email  ";
 "textBlago2" = "tolyshnoma@gmail.com";
 "textBlago3" = "";
 "Alphabet" = "Alphabet";
@@ -45,12 +49,12 @@
 //  Talyshi Dictionary (by F. Aboszoda)
 "a1" = "";
 //"a112" = "«Talysh Dictionary (by F. Aboszoda )»";
-"a13" = " application offers electronic dictionary from the Talyshi language to 4 different languages: Russian, Turkic (Azerbaijani), English and Persian. \n \n  The Talysh live to the south-west of the Caspian Sea on the Iran-Azerbaijan border. The Talyshi language is classified as follow: ";
+"a13" = " application offers electronic dictionary from the Talyshi language to 4 different languages: Russian, Turkic (Azerbaijani), English and Persian. \n \n  The Talysh people live in the south-west of the Caspian Sea on the Iran-Azerbaijan border. Talyshi language is classified as follows: ";
 "a2" = "Indo-European language family - Aryan branch - Iranian group - Northwestern subgroup - Caspian languages - Talyshi. ";
 
-"a3" = "The Talyshi language emerged in a consistent transformations of:";
+"a3" = "Talyshi language emerged in a way of consistent transformations of: ";
 "a31" = "Aryan - Avestan - Median - Parthian Pahlavi (Azari dialect) - Talyshi. ";
-"a30End" = "The Tati population living in many areas of north-western Iran are an ethnographic group of the Talysh and speak dialects similar to one of the nearby Talyshi dialects.\n  \n  The author of all 4 dictionaries is a scholar (philosopher, political scientist, philologist), journalist, public and political figure Fakhraddin Aboszoda (Abbasov). Some of the dictionaries were republished in an updated version several times. In this application you will find:";
+"a30End" = "Also, there Tati population on north-west of Iran that considered to be an ethnographic group of Talysh people speaking one of nearby Talyshi language dialects.\n  \n  The author of all 4 dictionaries is a scholar (philosopher, political scientist, philologist), journalist, public and political figure Fakhraddin Aboszoda (Abbasov). Some of the dictionaries were republished in an updated version several times. In this application you will find:";
 
 "a4" = "Russian-Talyshi dictionary (82,000 words;  Baku, 2006, 2008), Turkic-Talyshi dictionary (55,000 words; Baku, 2015), English-Talyshi dictionary (250,000 words; Munich, 2012), Persian-Talyshi dictionary (not published).\n";
 

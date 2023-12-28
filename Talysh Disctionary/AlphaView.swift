@@ -68,7 +68,7 @@ struct AlphaView: View {
                         VStack{
                             Text(item.tex1).font(.system(size: 22)).bold().padding(3)
                             Text(item.tex2).padding(2)
-                            Text(item.tex3).font(.system(size: 19)).bold().padding(3)
+                            Text(item.tex3).font(.system(size: 18)).bold().padding(3)
                         }
                   }
         }
@@ -77,6 +77,9 @@ struct AlphaView: View {
 
 struct AlphaView_Previews: PreviewProvider {
     static var previews: some View {
-        AlphaView()
+        Group {
+            AlphaView()
+            AlphaView()
+        }
     }
 }

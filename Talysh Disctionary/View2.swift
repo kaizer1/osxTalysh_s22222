@@ -36,12 +36,12 @@ struct View2: View {
                 
                 
                 if language == .farci {
-                     
-                    
+
+
                     Text("FarciBlago".localized(.english_us)).foregroundColor(Color.black)
                         .multilineTextAlignment(.leading)
                         .padding(.horizontal, 16.0)
-                     
+
                 }else {
 
                     Group {

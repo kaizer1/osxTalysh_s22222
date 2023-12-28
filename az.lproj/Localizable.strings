@@ -10,10 +10,12 @@
 
 "hello" = "Tətbiq haqqında";
 "Select_Language" = "Dil seçin:";
-"contacts" = "Xeyriyyəçilik";
-"textBlago1"= "«Talysh Dictionary (by F. Aboszoda)» mobil əlavəsi «TOLISHNOMA» elmi layihənin pulsuz məhsuludur. Bu lüğətin keyfiyyətini lazımi səviyyədə olmasını maddi cəhətdən dəstəkləmək və digər elmi məhsulların yaradılmasına kömək etmək istəyən hər kəsə";
+"contacts" = "Məlumat";
+
+// Bu lüğətin keyfiyyətini lazımi səviyyədə olmasını maddi cəhətdən dəstəkləmək və digər elmi məhsulların yaradılmasına kömək etmək istəyən hər kəsə
+"textBlago1"= "«Talysh Dictionary (by F. Aboszoda)» mobil əlavəsi «TOLISHNOMA» elmi layihənin pulsuz məhsuludur. Bütün sual və təkliflərinizi";
 "textBlago2" = " tolyshnoma@gmail.com ";
-"textBlago3" = "elektron poçtuna müraciət etmesi xahiş olunur.";
+"textBlago3" = "elektron ünvanina göndərməniz xahiş oıunur.";
 "Alphabet" = "Əlifba";
 "Translate" = "Tərcüməçi";
 "Settings" = "Quraşdırma";
@@ -27,7 +29,7 @@
 "lanRu" = "Rusiya";
 "lanEn" = "İngilis dili";
 "lanFa" = "fars";
-"lanAz" = "azərbaycan";
+"lanAz" = "azərbaycan dili";
 "lanTy" = "talış";
 
 

@@ -1,0 +1,6 @@
+framework module Pods_SQLite_swift {
+  umbrella header "Pods-SQLite.swift-umbrella.h"
+
+  export *
+  module * { export * }
+}

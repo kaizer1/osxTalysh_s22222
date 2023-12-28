@@ -187,8 +187,11 @@ struct View1: View {
                            wordToSee?.removeAll()
                            //hideKeyboard()
                            wordToSee = try losExcelent(trans: selectionDicti1, trans2: selectionDicti2, namess: value)
-                    
-                           wordToSee?.reverse()
+                     
+                        if(selectionDicti1 != .taly){
+                            wordToSee?.reverse()
+                        }
+                   
                     
                           if wordToSee!.isEmpty{
                             translateIs = true
